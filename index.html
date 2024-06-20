@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <header>
+    <h2 class="title">
+      Tip calculator
+    </h2>
+  </header>
+  <main>
+    <div class="card">
+      <div class="card__inputs">
+        <section class="card__bill">
+          <h4>Bill</h4>
+          <div class="card__bill-input">
+            <input type="number" id="bill-input" placeholder="0" maxlength="4">
+            <img src="./images/icon-dollar.svg" alt="dollar">
+          </div>
+        </section>
+        <section class="card__tip">
+          <h4>Select Tip %</h4>
+          <div class="card__tip-grid">
+            <button class="card__tip-option card__tip-option--fixed">5%</button>
+            <button class="card__tip-option card__tip-option--fixed">10%</button>
+            <button class="card__tip-option card__tip-option--fixed">15%</button>
+            <button class="card__tip-option card__tip-option--fixed">25%</button>
+            <button class="card__tip-option card__tip-option--fixed">50%</button>
+            <input type="number" class="card__tip-option card__tip-option--custom" id="tip-custom-input" placeholder="Custom" maxlength="3">
+          </div>
+        </section>
+        <section class="card__number-of-people">
+          <div class="card__people-labels">
+            <h4 class="card__people--input-title">Number of People</h4>
+            <h4 class="card__people--input-error hidden">Can't be zero</h4>
+          </div>
+          <div class="card__number-of-people-input">
+            <input type="number" id="number-of-people-input" placeholder="0" maxlength="3">
+            <img src="./images/icon-person.svg" alt="person">
+          </div>
+        </section>
+      </div>
+      <div class="card__outputs">
+        <section class="card__tip-amount">
+          <h5>Tip Amount<br><p>/ person</p></h5>
+          <output id="tip-amount-output">$0.00</output>
+        </section>
+        <section class="card__tip-total">
+          <h5>Total<br><p>/ person</p></h5>
+          <output id="tip-total-output">$0.00</output>
+        </section>
+        <button class="card__reset-btn">RESET</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/MaorBezalel" target="_blank">Michael Ildefonso</a>.
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
